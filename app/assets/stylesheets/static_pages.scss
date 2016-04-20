@@ -2,12 +2,14 @@ nav {
 	font-family: tahoma, verdama, sans serif;
 	top: 0;
 	ul {
-	list-style-type: none;
+		list-style-type: none;
 		.btn {
 		float: right;
 		padding: 8px;
 		margin: 8px;
 		background-color: #f0f8ff;
+		@media screen and (max-widrh: 480px) {
+			background-color: white;
 		}
 	}
 }
