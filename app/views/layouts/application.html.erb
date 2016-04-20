@@ -11,18 +11,22 @@
 </head>
 <body>
 
-<nav>
-	<ul>
-		<li>Contact</li>
-		<li>About</li>
-		<li>Home</li>
-	</ul>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<ul>
+			<li><button type="button" class="btn btn-deafult navbar-btn">Contact</button></li>
+			<li><button type="button" class="btn btn-deafult navbar-btn">About</button></li>
+			<li><button type="button" class="btn btn-deafult navbar-btn">Home</button></li>
+		</ul>
+	</div>
 </nav>
 
 <%= yield %>
 
-<footer>
-	&copy; 2015 Bike Berlin
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">&copy; 2015 Bike Berlin</p>
+	</div>
 </footer>
 
 </body>

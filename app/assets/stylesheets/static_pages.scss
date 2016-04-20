@@ -1,13 +1,29 @@
 nav {
 	font-family: tahoma, verdama, sans serif;
+	top: 0;
 	ul {
 	list-style-type: none;
-	margin: 10px;
-		li {
-		display: block;
+		.btn {
 		float: right;
-		padding: 10px;
-		background-color: #c2eceb;
+		padding: 8px;
+		margin: 8px;
+		background-color: #f0f8ff;
 		}
 	}
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	padding-top: 60px;
+	margin-bottom: 60px;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/* fixed height of sticky footer */
+	height: 60px;
+	background-color: #eeeeee;
 }
