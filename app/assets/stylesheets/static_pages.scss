@@ -4,12 +4,12 @@ nav {
 	ul {
 		list-style-type: none;
 		.btn {
-		float: right;
-		padding: 8px;
-		margin: 8px;
-		background-color: #f0f8ff;
-		@media screen and (max-width: 480px) {
-			background-color: white;
+			float: right;
+			padding: 8px;
+			margin: 8px;
+			background-color: #f0f8ff;
+			@media screen and (max-width: 480px) {
+				background-color: white;
 		}
 		}
 	}

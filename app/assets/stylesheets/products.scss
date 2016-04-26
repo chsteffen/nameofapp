@@ -1,3 +1,30 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	font-family: verdana;
+	color: #c1b7b4;
+	font-weight: 400;
+	margin: 10px;
+	letter-spacing: 3px;
+}
+table, th {
+	border: 2px solid black;
+}
+table {
+		margin: 10px;
+		width: 100%;
+		border-collapse: collapse;
+}
+th {
+		height: 50px;
+		text-align: center;
+		font-family: verdana;
+		font-weight: 200;
+		padding: 10px;
+		text-transform: uppercase;
+}
+.btn-group, .field, .actions, p {
+	margin: 10px;
+}
