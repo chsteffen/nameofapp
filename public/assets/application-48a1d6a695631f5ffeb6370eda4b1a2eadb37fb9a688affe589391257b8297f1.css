@@ -1,0 +1,174 @@
+/* line 5, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+h1 {
+  font-family: verdana;
+  color: #c1b7b4;
+  font-weight: 400;
+  margin: 10px;
+  letter-spacing: 3px;
+}
+
+/* line 12, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+table, th {
+  border: 2px solid black;
+}
+
+/* line 15, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+table {
+  margin: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 20, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+th {
+  height: 50px;
+  text-align: center;
+  font-family: verdana;
+  font-weight: 200;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* line 28, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.btn-group, .field, .actions, p {
+  margin: 10px;
+}
+/* line 1, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 1, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav {
+  font-family: tahoma, verdama, sans serif;
+  top: 0;
+}
+/* line 4, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav ul {
+  list-style-type: none;
+}
+/* line 6, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav ul .btn {
+  float: right;
+  padding: 8px;
+  margin: 8px;
+  background-color: #f0f8ff;
+}
+@media screen and (max-width: 480px) {
+  /* line 6, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+  nav ul .btn {
+    background-color: white;
+  }
+}
+
+/* line 17, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 21, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+body {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* line 25, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* fixed height of sticky footer */
+  height: 60px;
+  background-color: #eeeeee;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
