@@ -14,9 +14,9 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<ul>
-			<li><button type="button" class="btn btn-deafult navbar-btn"><a href="http://localhost:3000/static_pages/contact">Contact</a></button></li>
-			<li><button type="button" class="btn btn-deafult navbar-btn"><a href="http://localhost:3000/static_pages/about">About</a></button></li>
-			<li><button type="button" class="btn btn-deafult navbar-btn"><a href="http://localhost:3000/static_pages/index">Home</a></button></li>
+			<li><button type="button" class="btn btn-deafult navbar-btn"><%= link_to "Contact", @about %></button></li>
+			<li><button type="button" class="btn btn-deafult navbar-btn"><%= link_to "About", @about %></button></li>
+			<li><button type="button" class="btn btn-deafult navbar-btn"><%= link_to "Home", @index %></button></li>
 		</ul>
 	</div>
 </nav>
