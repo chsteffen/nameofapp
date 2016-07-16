@@ -7,8 +7,6 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
 
-  get 'static_pages/products'
-
   get 'static_pages/landing_page'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -18,13 +16,13 @@ Rails.application.routes.draw do
   root 'static_pages#landing_page'
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  resources :products
   resources :orders, only: [:index, :show, :create, :destroy]
   # Example resource route with options:
   #   resources :products do
