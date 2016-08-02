@@ -18,12 +18,12 @@
 			<li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Products", products_path(@products) %></button></li>
 			<li><button type="button" class="btn btn-default navbar-btn"><%= link_to "About", static_pages_about_path %></button></li>
 			<li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Home", static_pages_index_path %></button></li>
-			<%= form_tag("/products", method: "get") do %>
-				<%= label_tag(:q, "Search for:") %>
-				<%= text_field_tag(:q) %>
-				<%= submit_tag("Search") %>
-				<% end %>
-			
+			<form class="navbar-form navbar-left" role="search"><%= form_tag('/products', method: :get) do %>
+			<div class="form-group">
+			<%= label_tag(:q, "Search for:") %>
+			<%= text_field_tag(:q) %></div>
+			<%= submit_tag("Search") %>	
+			<% end %></form>
 		</ul>
 	</div>
 </nav>
