@@ -1,34 +1,3 @@
-nav {
-	font-family: tahoma, verdana, sans serif;
-	top: 0;
-	ul {
-		list-style-type: none;
-		.btn {
-			float: right;
-			padding: 8px;
-			margin: 8px;
-			color: #606060;
-			background-color: #f0f8ff;
-			@media screen and (max-width: 480px) {
-				background-color: white;
-		}
-		}
-	}
-}
-html {
-	position: relative;
-	min-height: 100%;
-}
-body {
-	padding-top: 60px;
-	margin-bottom: 60px;
-}
-.footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	/* fixed height of sticky footer */
-	height: 60px;
-	background-color: #eeeeee;
-}
-
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
