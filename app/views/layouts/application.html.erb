@@ -10,8 +10,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<% if notice %>
+	<p id="notice" class="alert alert-info"><%= notice %></p>
+<% end %>
+<% if alert %>
+	<p id="alert" class="alert alert-success"><%= alert %><br><button>ok</button></p>
+<% end %>
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
