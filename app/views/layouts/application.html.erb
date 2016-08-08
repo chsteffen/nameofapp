@@ -32,14 +32,11 @@
 				<% end %></form>
 			</ul>
 			<ul class="nav pull-right">
-					<% if user_signed_in? %>
-						<li>
-						<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-						</li>
-					<% else %>
-						<li>
-						<%= link_to('Login', new_user_session_path) %>
-						</li>
+				<li>
+				<% if user_signed_in? %>
+					<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+				<% else %>
+					<%= link_to('Login', new_user_session_path, class: "btn btn-default navbar-btn") %>
 					<% end %>
 			</ul>
 		</div><!--/.navbar-collapse -->
