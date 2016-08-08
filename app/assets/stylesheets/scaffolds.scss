@@ -2,13 +2,21 @@ body {
   padding-top: 60px;
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: tahoma, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
+li {
+  font-family: tahoma, verdana, sans-serif;
+  font-size: 15px;
+}
+  li:hover {
+  background-color: #d1eeee;
+  }
+
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: geneva, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -17,6 +25,10 @@ p, ol, ul, td {
     text-align: left;
     margin: 20px;
   }
+
+#contact {
+  padding: 30px;
+}
 
 pre {
   background-color: #eee;
