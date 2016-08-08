@@ -9,7 +9,7 @@
 	<!-- Wrapper for slide -->
 	<div class="carousel-inner" role="listbox">
 		<% @products.each do |product| %>
-		<div class="item<%= " active" if product == @products.first %>">
+		<div class="img-responsive item<%= " active" if product == @products.first %>">
 			<%= image_tag(product.image_url) %>
 			<div class="carousel-caption">
 				<%= product.name %>
