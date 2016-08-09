@@ -3,15 +3,16 @@
 <h1 class="product">Products</h1>
 <div style="overflow-x-auto;">
 </div>
-<tbody>
-	<div class="container-fluid">
-		<div class="row">
-   		<%= render @products %>
-   	</div>
-   </div>
-  </tbody>
-<br>
 
+	<tbody>
+		<div class="container-fluid">
+			<div class="row">
+	   	<%= render @products %>
+	   	</div>
+	   </div>
+  </tbody>
+
+<br>
 <div class="col-sm-6" "col-md-4">
 	<%= link_to 'New Product', new_product_path, class:"btn btn-default" %>
 </div>
