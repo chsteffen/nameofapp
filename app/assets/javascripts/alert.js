@@ -1,4 +1,4 @@
 $(document).ready(function(){
-	$(".alert").delay(800).fadeOut("fast");
+	$(".alert").delay(1000).fadeOut("slow");
 	
 });
