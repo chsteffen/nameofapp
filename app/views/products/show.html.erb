@@ -25,7 +25,7 @@
 				<strong>Price:</strong>
 				<%= @product.price %>
 			</p>
-
+ 			
 			<p><%= render partial: 'comments' %></p>
 
 			<p><%= render partial: 'new_comment' %></p>
@@ -41,4 +41,3 @@
 	<%= link_to 'Edit', edit_product_path(@product), class:"btn btn-default btn-xs" %> |
 	<%= link_to 'Back', products_path, class:"btn btn-default btn-xs" %>
 </div>
-<%= @product.highest_rating_comment %> 
