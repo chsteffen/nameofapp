@@ -5,26 +5,27 @@
 		<div class="thumbnail">
 			<div class="caption">
 				<h3><strong>Name:</strong><%= @product.name %></h3>
+				<p>
+					<strong>Description:</strong>
+					<%= @product.description %>
+				</p>
+				<p>
+					<%= image_tag(@product.image_url) %>
+				</p>
+				<p>
+					<strong>Colour:</strong>
+					<%= @product.colour %>
+				</p>
+				<p>
+					<strong>Price:</strong>
+					<%= @product.price %>
+				</p>
 			</div>
-			<p>
-				<strong>Description:</strong>
-				<%= @product.description %>
-			</p>
-			<p>
-				<%= image_tag(@product.image_url), class:"img-responsive" %>
-			</p>
-			<p>
-				<strong>Colour:</strong>
-				<%= @product.colour %>
-			</p>
-			<p>
-				<strong>Price:</strong>
-				<%= @product.price %>
-			</p>
 		</div>
 	</div>
 </div>
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+
+<%= link_to 'Edit', edit_product_path(@product), class:"btn btn-default" %> |
+<%= link_to 'Back', products_path, class:"btn btn-default" %>
 
 <%= @product.highest_rating_comment %> 
