@@ -2,5 +2,7 @@
 
 <%= render partial: 'form' %>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+<div class="col-sm-6 col-md-4">	
+	<%= link_to ('<span class="glyphicon glyphicon-arrow-left"></span>').html_safe, products_path %> |
+	<%= link_to 'Show', @product, class:"btn btn-default btn-xs" %> 
+</div>
