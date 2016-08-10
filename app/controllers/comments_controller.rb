@@ -21,9 +21,6 @@ class CommentsController < ApplicationController
 		redirect_to product
 	end
 
-	def index
-		@comments = @product.comments.paginate(:page => params[:page], :per_page => 2)
-	end
 
 
 

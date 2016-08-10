@@ -33,3 +33,27 @@ th {
 	padding: 10px;
 	margin: 30px;
 }
+
+.pagination {
+	text-align: center;
+	cursor: default;
+	font-size: 14px;
+	display: block;
+	clear: top;
+	color: #666666;
+}
+.pagination a {
+	text-decoration: none;
+	border: 2px solid #aeeeee;
+	border-radius: 5px;
+	padding: 0.2em 0.5em;
+}
+.pagination a:hover, .pagination a:focus {
+	background-color: #f5f5f5;
+	color: #666666;
+}
+.pagination .disabled {
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	padding: 0.2em 0.5em;
+}
