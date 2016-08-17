@@ -21,8 +21,12 @@
 
 			<p>
 				<strong>Price:</strong>
-				<%= @product.price %>
+				<%= @product.price/100 %>
 			</p>
+
+			<%= form_tag "/payments/create" do %>
+				<%= render partial: "layouts/stripe_checkout_button" %>
+			<% end %>
 
 			<p><%= render partial: 'comments' %></p>
 

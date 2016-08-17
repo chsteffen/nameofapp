@@ -47,7 +47,6 @@ ActiveRecord::Schema.define(version: 20160809215250) do
     t.datetime "updated_at",  null: false
     t.string   "colour"
     t.decimal  "price"
-  end
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"

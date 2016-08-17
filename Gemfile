@@ -57,3 +57,5 @@ gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.0'
 
 gem 'activeadmin', '~> 1.0.0.pre4'
+
+gem 'stripe'

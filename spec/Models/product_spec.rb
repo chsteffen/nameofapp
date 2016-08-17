@@ -4,7 +4,6 @@ describe Product do
 
 	context "when the product has comments" do
 		before do
-	#here you put code to generate test content
 			@product = Product.create!(name: "race bike")
 			@product.comments.create!(rating: 1, user: @user, body: "Awful bike!")
 			@product.comments.create!(rating: 3, user: @user, body: "It was okay.")
