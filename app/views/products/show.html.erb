@@ -24,6 +24,10 @@
 				<%= @product.price %>
 			</p>
 
+			<%= form_tag "/payments/create" do %>
+				<%= render partial: "layouts/stripe_checkout_button" %>
+			<% end %>
+
 			<p><%= render partial: 'comments' %></p>
 
 			<p><%= render partial: 'new_comment' %></p>

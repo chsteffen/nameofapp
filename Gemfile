@@ -34,6 +34,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
@@ -56,3 +57,5 @@ gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.0'
 
 gem 'activeadmin', '~> 1.0.0.pre4'
+
+gem 'stripe'
