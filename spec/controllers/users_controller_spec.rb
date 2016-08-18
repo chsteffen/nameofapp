@@ -36,8 +36,8 @@ describe UsersController, :type => :controller do
 		end
 		context "User not user_two is logged in" do
 			it "cannot access user_two details" do
-				get :show, id: @user_two.id
-				expect(assigns(:first_user)).not_to eq user_two
+				get :show, id: @user.id
+				expect(assigns(:user)).not_to eq user_two
 				expect(response).to redirect_to(root_path)
 			end
 		end	

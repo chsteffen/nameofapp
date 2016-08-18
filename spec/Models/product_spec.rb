@@ -10,6 +10,8 @@ describe Product do
 			@product.comments.create!(rating: 5, user: @user, body: "Best bike ever!")
 				it "returns the average rating of all comments" do
 					expect(@product.comments(average_rating)).should == 3
+				end
+				it "is not valid" do	
 					expect(Product.new(description: "Nice bike")).not_to be_valid
 				end
 		end
