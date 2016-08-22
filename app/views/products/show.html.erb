@@ -25,7 +25,7 @@
 			</p>
 
 			<%= form_tag "/payments/create" do %>
-				<%= render partial: "views/shared/stripe_checkout_button" %>
+				<%= render partial: "/shared/stripe_checkout_button" %>
 			<% end %>
 
 			<p><%= render partial: 'comments' %></p>
