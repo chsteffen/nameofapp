@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
       search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}%")
     else
+      byebug
       @products = Product.all
     end
   end
@@ -80,5 +81,5 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
-
+  
 end
