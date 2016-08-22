@@ -2,7 +2,7 @@ class PaymentsController < ApplicationController
 
 def create
 	def find
-		@product = params[:product_id]
+		@product = Product.find(params[:product_id])
 	end
 	token = params[:stripeToken]
 	# Create the charge on Stripe's servers - this will charge the user's card
