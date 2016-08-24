@@ -13,10 +13,11 @@ def create
 			:currency => "usd",
 			:source => token, 
 			:description => params[:stripeEmail]
+			:receipt_email => @user.email
 			)
 
 		if charge.paid
-			Order.create(:product_id, :user_id, :total)
+			Order.create(:product_id, :user_id, :total, :email)
 		end
 
 		rescue Stripe::CardError => e

@@ -7,6 +7,7 @@ class Product < ActiveRecord::Base
 	validates :image_url, presence: true
 	validates :price, presence: true
 
+
 def highest_rating_comment
 	comments.rating_desc.first
 end
