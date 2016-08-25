@@ -13,7 +13,6 @@ def create
 			:currency => "usd",
 			:source => token, 
 			:description => params[:stripeEmail]
-
 			)
 
 		if charge.paid
