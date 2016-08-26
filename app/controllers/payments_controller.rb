@@ -15,7 +15,7 @@ end
 			)
 
 		if charge.paid
-			Order.create(:product_id => @product.id, :user_id => @user.id, :total => @product.price, :email)
+			Order.create(:product_id => @product_id, :user_id => @user_id, :total => @product.price, :email)
 		end
 
 		rescue Stripe::CardError => e
