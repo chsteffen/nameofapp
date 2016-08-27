@@ -15,7 +15,7 @@ end
 			)
 
 		if charge.paid
-			Order.create(:product_id => @product_id, :user_id => @user_id, :total => @product.price, :email)
+			Order.create(:product_id, :user_id, :total, :email)
 		end
 
 		rescue Stripe::CardError => e
@@ -25,5 +25,5 @@ end
 			flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
 		end
 		redirect_to product_path(product)
-	end
+
 end
