@@ -27,8 +27,7 @@ def create
 			err = body[:error]
 			flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
 		end
-		redirect_to products_url(@product)
-
+	
 	end
 
 end
