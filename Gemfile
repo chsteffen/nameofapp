@@ -63,3 +63,7 @@ gem 'activeadmin', '~> 1.0.0.pre4'
 gem 'stripe'
 
 gem 'dalli'
+
+gem 'redis-rails'
+
+gem 'newrelic_rpm'
