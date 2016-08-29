@@ -6,6 +6,7 @@ $(document).on('ready page:load', function() {
 		score: function() {
 			return $(this).attr('data-score');
 		}
+	}
 	});
 
 });
