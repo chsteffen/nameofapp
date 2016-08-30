@@ -27,12 +27,13 @@
 			<% end %>
 			<%= form_tag "/payments/create" do %>
 				<%= render partial: "/shared/stripe_checkout_button" %>
+					<%= hidden_field_tag(:product_id, @product.id) %>
 			<% end %>
-
-			<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 			
 			<p><%= render partial: 'comments' %></p>
-
+			
+			<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+			
 			<p><%= render partial: 'new_comment' %></p>
 
 			<p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div></p>

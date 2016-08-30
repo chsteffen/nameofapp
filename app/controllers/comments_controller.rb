@@ -6,7 +6,8 @@ class CommentsController < ApplicationController
 		respond_to do |format|
 			if @comment.save
 				ActionCable.server.broadcast 'product_channel', comment: @comment
-				format.html { redirect_to @product, notice: 'Review was created successfully.' }
+				format.html { redirect_to @product, notice: 'Review was created successfully.' 
+				}
 				format.json { render :show, status: :created, location: @product }
 				format.js
 			else
