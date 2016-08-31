@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Nameofapp</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= action_cable_meta_tag %>
-</head>
+<%= render 'layouts/head' %>
+
 <body>
 <% if notice %>
 	<p id="notice" class="alert alert-info"><%= notice %><br></p>
@@ -16,32 +9,8 @@
 <% if alert %>
 	<p id="alert" class="alert alert-success"><%= alert %><br></p>
 <% end %>
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li><%= link_to "Home", static_pages_index_path, class: "navbar-header" %></li>
-				<li><%= link_to "About",static_pages_about_path, class: "navbar-header" %></li>
-				<li><%= link_to "Products", products_path(@products), class: "navbar-header" %></li>
-				<li><%= link_to "Contact", static_pages_contact_path, class: "navbar-header" %></li>
-				<form class="form-inline" role="search"><%= form_tag('/products', method: :get) do %>
-				<div class="form-group">
-				<%= label_tag(:q, "Search for:") %>
-				<%= text_field_tag(:q) %></div>
-				<%= submit_tag "Search", class: "btn btn-default btn-xs" %>
-				<% end %></form>
-			</ul>
-			<ul class="nav pull-right">
-				<li>
-				<% if user_signed_in? %>
-					<%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-default navbar-btn") %>
-				<% else %>
-					<%= link_to('Login', new_user_session_path, class: "btn btn-default navbar-btn") %>
-					<% end %>
-			</ul>
-		</div><!--/.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-</nav>
+
+<%= render 'layouts/nav' %>
 
 <%= yield %>
 
