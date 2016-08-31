@@ -1,0 +1,301 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+h1 {
+  font-family: helvetica;
+  color: #008080;
+  font-weight: 100;
+  margin: 20px;
+  letter-spacing: 2px;
+}
+
+/* line 12, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+table, th {
+  border: 2px solid black;
+}
+
+/* line 15, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+table {
+  margin: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 20, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+th {
+  height: 50px;
+  text-align: center;
+  font-family: verdana;
+  font-weight: 200;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* line 28, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.btn-group, .field, .actions, p {
+  margin: 10px;
+}
+
+/* line 32, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.thumbnail {
+  padding: 10px;
+  margin: 30px;
+}
+
+/* line 37, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.pagination {
+  text-align: center;
+  cursor: default;
+  font-size: 14px;
+  display: block;
+  clear: top;
+  color: #666666;
+}
+
+/* line 45, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.pagination a {
+  text-decoration: none;
+  border: 2px solid #aeeeee;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* line 51, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.pagination a:hover, .pagination a:focus {
+  background-color: #f5f5f5;
+  color: #666666;
+}
+
+/* line 55, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.pagination .disabled {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+}
+/* line 1, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  padding-top: 60px;
+  background-color: #fff;
+  color: #333;
+  font-family: tahoma, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+li {
+  font-family: tahoma, verdana, sans-serif;
+  font-size: 15px;
+}
+
+/* line 14, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+li:hover {
+  background-color: #d1eeee;
+}
+
+/* line 18, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: geneva, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 24, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+h2 {
+  text-align: left;
+  margin: 20px;
+}
+
+/* line 29, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#contact {
+  padding: 30px;
+}
+
+/* line 33, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 39, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 42, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 46, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 53, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 58, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: blue;
+}
+
+/* line 62, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 68, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 77, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#contact {
+  margin: 10px;
+}
+
+/* line 8, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+h2 {
+  font-family: helvetica, tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+/* line 13, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#footer {
+  font-size: 10px;
+  float: right;
+}
+/* line 5, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+table {
+  margin: 20px;
+  border: 1px solid white;
+}
+
+/* line 10, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+th {
+  border-top: 1px solid white;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+/* line 17, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #cccccc;
+}
+
+/* line 23, /Users/Caitie/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+#user {
+  margin: 30px;
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 16px;
+  color: #31698a;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+body {
+  padding-top: 70px;
+  background-color: #fff;
+  color: #333;
+  font-family: tahoma, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+li {
+  font-family: tahoma, verdana, sans-serif;
+  font-size: 15px;
+}
+  li:hover {
+  background-color: #d1eeee;
+  }
+
+p, ol, ul, td {
+  font-family: geneva, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+ h2, h3 {
+    text-align: left;
+    margin: 20px;
+  }
+
+#contact {
+  padding: 30px;
+}
