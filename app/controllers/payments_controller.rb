@@ -11,7 +11,8 @@ def create
 			:amount => (@product.price*100).to_i,
 			:currency => "usd",
 			:source => token, 
-			:description => params[:stripeEmail]
+			:description => params[:stripeEmail],
+			:receipt_email => @user.email
 			)
 
 		if charge.paid
