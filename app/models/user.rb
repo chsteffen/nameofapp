@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_many :orders
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-    validates :email, uniqueness: true
-    validates :password, confirmation: true, length: { minimum: 6 }
-    validates :password_confirmation, presence: true
+  validates :email, uniqueness: true
+  validates :password, confirmation: true, length: { minimum: 6 }
+  validates :password_confirmation, presence: true
    end
