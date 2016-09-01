@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "registrations" }
 
   resources :orders, only: [:index, :show, :create, :destroy]
-  
-  post 'payments/create'
 
   get 'static_pages/about'
 
@@ -20,6 +18,8 @@ Rails.application.routes.draw do
   post 'static_pages/thank_you'
 
   get 'static_pages/index'
+
+  post 'payments/create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
