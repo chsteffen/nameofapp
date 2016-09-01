@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<div class="row">
+<div class="row" data-product-id="<%= @product.id %>">
 	<div class="col-sm-6 col-md-4">
 		<div class="thumbnail">
 			<p>
-				<%= image_tag(@product.image_url, width: "200", class:"img-zoom", data_zoom_image: @product.image_url) %>
+				<%= image_tag(@product.image_url, width: "200", class:"img-zoom img-responsive", data_zoom_image: @product.image_url) %>
 			</p>
 			<div class="caption">
 			<% cache @product do %>
@@ -25,8 +25,9 @@
 				<%= @product.price %>
 			</p>
 			<% end %>
+
 			<%= form_tag "/payments/create" do %>
-				<%= render partial: "/shared/stripe_checkout_button" %>
+				<%= render partial: "shared/stripe_checkout_button" %>
 					<%= hidden_field_tag(:product_id, @product.id) %>
 			<% end %>
 			

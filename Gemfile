@@ -60,8 +60,6 @@ gem 'cancancan'
 
 gem 'will_paginate', '~> 3.1.0'
 
-gem 'inherited_resources', github: 'activeadmin/inherited_resources'
-
 gem 'stripe'
 
 gem 'dalli'
